@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Piece Academy</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="bg-slate-50 text-slate-800">
+    <header class="bg-white border-b border-slate-200 sticky top-0 z-20">
+      <div class="max-w-6xl mx-auto px-4 py-3 flex items-center justify-between gap-4">
+        <div class="text-3xl font-bold text-blue-900">Piece Academy</div>
+        <nav class="hidden md:flex items-center gap-8 text-sm font-semibold">
+          <a href="#" class="text-blue-900 border-b-2 border-blue-900 pb-1">Top</a>
+          <a href="#about" class="hover:text-blue-700">Piece Academyとは</a>
+          <a href="#services" class="hover:text-blue-700">サービス</a>
+          <a href="#flow" class="hover:text-blue-700">申し込みの流れ</a>
+          <a href="#faq" class="hover:text-blue-700">FAQ</a>
+          <a href="#contact" class="hover:text-blue-700">お問い合わせ</a>
+        </nav>
+        <button class="bg-orange-500 hover:bg-orange-600 text-white font-bold px-5 py-2 rounded-lg">無料相談</button>
+      </div>
+    </header>
+
+    <main>
+      <section class="max-w-6xl mx-auto px-4 py-10 grid lg:grid-cols-2 gap-6 items-stretch">
+        <div class="bg-white border border-slate-200 rounded-xl p-8 space-y-6">
+          <h1 class="text-5xl leading-tight font-extrabold text-blue-950">ITを、<br />学びから実践へ。</h1>
+          <p class="text-lg leading-8">Piece Academyは、個人の学習支援から企業のDX人材育成まで、ITをもっと身近にするための教育ブランドです。</p>
+          <div class="flex flex-wrap gap-3">
+            <button class="bg-orange-500 text-white font-bold px-6 py-3 rounded-lg">無料相談をはじめる</button>
+            <button class="bg-white border border-blue-900 text-blue-900 font-bold px-6 py-3 rounded-lg">サービスを見る</button>
+          </div>
+        </div>
+        <div class="grid sm:grid-cols-2 gap-4">
+          <div class="bg-white border rounded-xl p-4 sm:col-span-2">
+            <p class="font-bold text-blue-900 mb-2">学習ロードマップ（例）</p>
+            <div class="h-2 bg-slate-200 rounded-full overflow-hidden"><div class="h-full w-2/3 bg-blue-600"></div></div>
+            <p class="text-right mt-2 font-semibold">65%</p>
+          </div>
+          <div class="bg-white border rounded-xl p-4">
+            <p class="font-bold text-blue-900 mb-3">相談スケジュール</p>
+            <p class="text-sm">次回の相談</p>
+            <p class="text-lg font-bold">2024年5月28日（火）14:00 - 15:00</p>
+            <button class="mt-3 border border-blue-900 rounded-lg px-3 py-2 text-sm font-semibold text-blue-900">日程を確認する</button>
+          </div>
+          <div class="bg-white border rounded-xl p-4">
+            <p class="font-bold text-blue-900 mb-3">実績</p>
+            <ul class="space-y-1 text-sm">
+              <li>受講生数 <span class="font-bold text-lg">1,200+</span></li>
+              <li>法人企業数 <span class="font-bold text-lg">150+</span></li>
+              <li>学習満足度 <span class="font-bold text-lg">4.8/5.0</span></li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section id="about" class="bg-white border-y">
+        <div class="max-w-6xl mx-auto px-4 py-12">
+          <h2 class="text-4xl font-bold text-center text-blue-950">Piece Academyとは</h2>
+          <p class="text-center mt-4">私たちは、IT・DX・プログラミング教育を通じて、個人のキャリアと企業の成長を支援します。</p>
+          <div class="grid md:grid-cols-3 gap-4 mt-8">
+            <div class="border rounded-xl p-5 bg-slate-50"><h3 class="font-bold text-xl text-blue-900">個人から法人まで対応</h3><p class="mt-2 text-sm">未経験者の学習支援から、企業のDX人材育成まで幅広くサポート。</p></div>
+            <div class="border rounded-xl p-5 bg-slate-50"><h3 class="font-bold text-xl text-blue-900">学びを実務につなぐ</h3><p class="mt-2 text-sm">実務に直結するカリキュラムとアウトプット重視の学習設計。</p></div>
+            <div class="border rounded-xl p-5 bg-slate-50"><h3 class="font-bold text-xl text-blue-900">相談しやすい支援体制</h3><p class="mt-2 text-sm">専任カウンセラーが学習・転職・研修を一貫して伴走。</p></div>
+          </div>
+        </div>
+      </section>
+
+      <section id="services" class="max-w-6xl mx-auto px-4 py-12">
+        <h2 class="text-4xl font-bold text-blue-950 text-center mb-8">サービス一覧</h2>
+        <div class="grid md:grid-cols-3 gap-4">
+          <div class="bg-white border rounded-xl p-6 text-center"><h3 class="text-3xl text-blue-900 font-bold">Codelya</h3><p class="mt-2">未経験からエンジニア転職を目指す方向けスクール。</p><button class="mt-4 border px-5 py-2 rounded-lg text-blue-900">詳しく見る</button></div>
+          <div class="bg-white border rounded-xl p-6 text-center"><h3 class="text-2xl text-blue-900 font-bold">企業向けDX人材育成</h3><p class="mt-2">実践的なデジタル人材育成プログラムを提供。</p><button class="mt-4 border px-5 py-2 rounded-lg text-blue-900">相談する</button></div>
+          <div class="bg-white border rounded-xl p-6 text-center"><h3 class="text-2xl text-blue-900 font-bold">SES育成・人材支援</h3><p class="mt-2">IT人材の育成支援とキャリア支援を実施。</p><button class="mt-4 border px-5 py-2 rounded-lg text-blue-900">相談する</button></div>
+        </div>
+      </section>
+
+      <section id="flow" class="bg-white border-y">
+        <div class="max-w-6xl mx-auto px-4 py-12">
+          <h2 class="text-4xl font-bold text-center text-blue-950">申し込みの流れ</h2>
+          <div class="grid md:grid-cols-4 gap-4 mt-8">
+            <div class="border rounded-xl p-4"><p class="text-blue-900 font-bold">1 無料相談</p><p class="text-sm mt-2">課題やご希望をお伺いします。</p></div>
+            <div class="border rounded-xl p-4"><p class="text-blue-900 font-bold">2 課題・目的のヒアリング</p><p class="text-sm mt-2">最適な学習方針を整理します。</p></div>
+            <div class="border rounded-xl p-4"><p class="text-blue-900 font-bold">3 最適な学習プランの提案</p><p class="text-sm mt-2">目的に合わせてプランを提案します。</p></div>
+            <div class="border rounded-xl p-4"><p class="text-blue-900 font-bold">4 学習・研修スタート</p><p class="text-sm mt-2">伴走サポートで成果へ導きます。</p></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="max-w-6xl mx-auto px-4 py-12 grid lg:grid-cols-2 gap-6" id="faq">
+        <div>
+          <h2 class="text-3xl font-bold text-blue-950 mb-4">よくある質問</h2>
+          <div class="space-y-3">
+            <details class="bg-white border rounded-lg p-4"><summary>未経験でも相談できますか？</summary><p class="mt-2 text-sm">もちろん可能です。</p></details>
+            <details class="bg-white border rounded-lg p-4"><summary>法人でも問い合わせできますか？</summary><p class="mt-2 text-sm">法人研修の相談も可能です。</p></details>
+          </div>
+        </div>
+        <div id="contact">
+          <h2 class="text-3xl font-bold text-blue-950 mb-4">お問い合わせ・無料相談</h2>
+          <form class="bg-white border rounded-xl p-5 space-y-3">
+            <input class="w-full border rounded p-2" placeholder="お名前" />
+            <input class="w-full border rounded p-2" placeholder="メールアドレス" />
+            <select class="w-full border rounded p-2"><option>相談種別を選択</option></select>
+            <textarea class="w-full border rounded p-2" rows="4" placeholder="ご相談内容"></textarea>
+            <button class="w-full bg-orange-500 text-white font-bold py-3 rounded-lg">送信する</button>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="bg-blue-950 text-white mt-8">
+      <div class="max-w-6xl mx-auto px-4 py-8 grid md:grid-cols-4 gap-4 text-sm">
+        <div><p class="text-2xl font-bold">Piece Academy</p><p class="mt-2">IT・DX教育で未来をつくる。</p></div>
+        <div><p class="font-bold mb-2">サイトマップ</p><ul class="space-y-1"><li>Top</li><li>Piece Academyとは</li><li>サービス</li></ul></div>
+        <div><p class="font-bold mb-2">情報</p><ul class="space-y-1"><li>FAQ</li><li>お問い合わせ</li></ul></div>
+        <div><p class="font-bold mb-2">運営会社</p><p>株式会社Piece Academy</p><p>info@piece-academy.jp</p></div>
+      </div>
+      <p class="text-center text-xs pb-4">© 2024 Piece Academy Inc. All Rights Reserved.</p>
+    </footer>
+  </body>
+</html>
