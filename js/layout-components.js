@@ -8,8 +8,8 @@
   const route = (path) => `${basePrefix}${path}`;
 
   const navItems = [
-    { key: "home", href: route("index.html"), label: "Top" },
-    { key: "about", href: route("about/about.html"), label: "PieceAcademyとは" },
+    { key: "home", href: route("index.html"), label: "ホーム" },
+    { key: "about", href: route("about/about.html"), label: "受講を考えられている方" },
     { key: "services", href: route("service/services.html"), label: "サービス" },
     { key: "corporations", href: route("company/corporations.html"), label: "企業様の方はこちら" },
     { key: "faq", href: route("faq/faq.html"), label: "FAQ" },
@@ -17,8 +17,8 @@
   ];
 
   const footerLinks = [
-    { href: route("index.html"), label: "Top" },
-    { href: route("about/about.html"), label: "PieceAcademyとは" },
+    { href: route("index.html"), label: "ホーム" },
+    { href: route("about/about.html"), label: "受講を考えられている方" },
     { href: route("service/services.html"), label: "サービス" },
     { href: route("company/corporations.html"), label: "企業様の方はこちら" }
   ];
@@ -42,6 +42,15 @@
         })
         .join("");
 
+      const mobileNavHtml = navItems
+        .map((item) => {
+          const className = item.key === activePage
+            ? "block rounded-md bg-blue-50 px-4 py-3 text-sm font-black text-navy"
+            : "block rounded-md px-4 py-3 text-sm font-semibold text-slate-700 hover:bg-slate-50";
+          return `<a class="${className}" href="${item.href}">${item.label}</a>`;
+        })
+        .join("");
+
       this.innerHTML = `
         <header class="sticky top-0 z-50 border-b border-slate-200 bg-white/95 backdrop-blur">
           <div class="mx-auto flex max-w-7xl items-center justify-between px-5 py-3 lg:px-8">
@@ -53,10 +62,43 @@
               ${navHtml}
             </nav>
 
-            <a href="${route("contact/contact.html")}" class="rounded-md bg-orangebrand px-5 py-3 text-sm font-bold text-white shadow-soft transition hover:bg-orange-600">無料相談</a>
+            <div class="flex items-center gap-2">
+              <a href="${route("contact/contact.html")}" class="hidden rounded-md bg-orangebrand px-5 py-3 text-sm font-bold text-white shadow-soft transition hover:bg-orange-600 lg:inline-flex">無料相談</a>
+              <button id="hamburger-btn" class="flex flex-col justify-center gap-[5px] rounded-md p-2 hover:bg-slate-100 lg:hidden" aria-label="メニューを開く" aria-expanded="false">
+                <span class="hamburger-bar block h-[2px] w-6 rounded-full bg-navy transition-all duration-300"></span>
+                <span class="hamburger-bar block h-[2px] w-6 rounded-full bg-navy transition-all duration-300"></span>
+                <span class="hamburger-bar block h-[2px] w-6 rounded-full bg-navy transition-all duration-300"></span>
+              </button>
+            </div>
+          </div>
+
+          <div id="mobile-menu" class="hidden lg:hidden border-t border-slate-100 bg-white shadow-md">
+            <nav class="mx-auto flex max-w-7xl flex-col gap-1 px-5 py-4" aria-label="モバイルナビゲーション">
+              ${mobileNavHtml}
+              <a href="${route("contact/contact.html")}" class="mt-2 block rounded-md bg-orangebrand px-4 py-3 text-center text-sm font-black text-white transition hover:bg-orange-600">無料相談</a>
+            </nav>
           </div>
         </header>
       `;
+
+      const btn = this.querySelector("#hamburger-btn");
+      const menu = this.querySelector("#mobile-menu");
+      const bars = this.querySelectorAll(".hamburger-bar");
+
+      btn.addEventListener("click", () => {
+        const isOpen = !menu.classList.contains("hidden");
+        menu.classList.toggle("hidden");
+        btn.setAttribute("aria-expanded", String(!isOpen));
+        if (!isOpen) {
+          bars[0].style.transform = "translateY(7px) rotate(45deg)";
+          bars[1].style.opacity = "0";
+          bars[2].style.transform = "translateY(-7px) rotate(-45deg)";
+        } else {
+          bars[0].style.transform = "";
+          bars[1].style.opacity = "";
+          bars[2].style.transform = "";
+        }
+      });
     }
   }
 
