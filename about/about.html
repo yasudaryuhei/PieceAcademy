@@ -47,36 +47,19 @@
       background-image: url("https://images.unsplash.com/photo-1497366811353-6870744d04b2?auto=format&fit=crop&w=1400&q=80");
     }
   </style>
+  <script src="../js/layout-components.js" defer></script>
 </head>
 <body class="antialiased bg-white">
-  <header class="sticky top-0 z-50 border-b border-slate-200 bg-white/95 backdrop-blur">
-    <div class="mx-auto flex max-w-7xl items-center justify-between px-5 py-3 lg:px-8">
-      <a href="index.html" class="flex items-center gap-3" aria-label="PieceAcademy トップ">
-        <span class="grid h-10 w-10 place-items-center rounded-md bg-bluebrand text-white shadow-line">
-          <svg viewBox="0 0 24 24" class="h-6 w-6" aria-hidden="true"><path fill="currentColor" d="M4 4.5c2.4 0 4.5.7 6 2v13c-1.5-1.1-3.6-1.7-6-1.7V4.5Zm16 0v13.3c-2.4 0-4.5.6-6 1.7v-13c1.5-1.3 3.6-2 6-2ZM11 6.5h2v13h-2v-13Z"/></svg>
-        </span>
-        <span class="text-xl font-bold tracking-normal text-navy">PieceAcademy</span>
-      </a>
-      <nav class="hidden items-center gap-7 lg:flex" aria-label="メインナビゲーション">
-        <a class="py-2 text-sm font-semibold text-slate-700 hover:text-bluebrand" href="index.html">Top</a>
-          <a class="py-2 text-sm font-semibold border-b-2 border-bluebrand text-navy" href="about.html">PieceAcademyとは</a>
-          <a class="py-2 text-sm font-semibold text-slate-700 hover:text-bluebrand" href="services.html">サービス</a>
-          <a class="py-2 text-sm font-semibold text-slate-700 hover:text-bluebrand" href="flow.html">申し込みの流れ</a>
-          <a class="py-2 text-sm font-semibold text-slate-700 hover:text-bluebrand" href="faq.html">FAQ</a>
-          <a class="py-2 text-sm font-semibold text-slate-700 hover:text-bluebrand" href="contact.html">お問い合わせ</a>
-      </nav>
-      <a href="contact.html" class="rounded-md bg-orangebrand px-5 py-3 text-sm font-bold text-white shadow-soft transition hover:bg-orange-600">無料相談</a>
-    </div>
-  </header>
-</div>
-  <main>
+  <site-header page="about"></site-header>
+
+<main>
     <section class="bg-white border-b border-slate-200">
     <div class="mx-auto grid max-w-7xl gap-8 px-5 py-16 lg:grid-cols-[1fr_420px] lg:px-8">
       <div>
         <p class="text-sm font-black uppercase tracking-[0.18em] text-bluebrand">About</p>
         <h1 class="mt-5 text-4xl font-black leading-tight text-navy md:text-5xl">PieceAcademyとは</h1>
         <p class="mt-6 max-w-2xl text-base leading-8 text-slate-700">学びを現場の力へ変える、IT・DX教育の伴走ブランドです。</p>
-        <a href="contact.html" class="mt-8 inline-flex items-center gap-3 rounded-md bg-bluebrand px-6 py-4 text-sm font-bold text-white shadow-soft">無料相談へ<span aria-hidden="true">›</span></a>
+        <a href="../contact/contact.html" class="mt-8 inline-flex items-center gap-3 rounded-md bg-bluebrand px-6 py-4 text-sm font-bold text-white shadow-soft">無料相談へ<span aria-hidden="true">›</span></a>
       </div>
       <div class="rounded-lg border border-slate-200 bg-white p-6 shadow-soft">
         <p class="text-sm font-bold text-slate-500">ページ概要</p>
@@ -111,40 +94,6 @@
     </div>
   </section>
   </main>
-  <footer class="bg-navy py-10 text-white">
-    <div class="mx-auto grid max-w-7xl gap-10 px-5 md:grid-cols-4 lg:px-8">
-      <div>
-        <div class="flex items-center gap-3">
-          <span class="grid h-9 w-9 place-items-center rounded-md bg-white text-bluebrand">
-            <svg viewBox="0 0 24 24" class="h-5 w-5" aria-hidden="true"><path fill="currentColor" d="M4 4.5c2.4 0 4.5.7 6 2v13c-1.5-1.1-3.6-1.7-6-1.7V4.5Zm16 0v13.3c-2.4 0-4.5.6-6 1.7v-13c1.5-1.3 3.6-2 6-2ZM11 6.5h2v13h-2v-13Z"/></svg>
-          </span>
-          <p class="text-xl font-black">PieceAcademy</p>
-        </div>
-        <p class="mt-5 text-sm leading-7 text-white/80">IT・DX・プログラミング教育を通じて、一人ひとりの可能性を広げ、社会の未来を創ります。</p>
-      </div>
-      <div>
-        <h3 class="font-black">ページ</h3>
-        <ul class="mt-4 space-y-2 text-sm text-white/80">
-          <li><a href="about.html">PieceAcademyとは</a></li>
-          <li><a href="services.html">サービス</a></li>
-          <li><a href="flow.html">申し込みの流れ</a></li>
-          <li><a href="faq.html">FAQ</a></li>
-        </ul>
-      </div>
-      <div>
-        <h3 class="font-black">お問い合わせ</h3>
-        <ul class="mt-4 space-y-2 text-sm text-white/80">
-          <li><a href="contact.html">無料相談</a></li>
-          <li><a href="contact.html">資料請求</a></li>
-          <li><a href="contact.html">法人研修の相談</a></li>
-        </ul>
-      </div>
-      <div>
-        <h3 class="font-black">運営会社</h3>
-        <p class="mt-4 text-sm leading-7 text-white/80">株式会社PieceAcademy<br>東京都渋谷区代々木2-23-1<br>info@piece-academy.jp<br>03-1234-5678</p>
-      </div>
-    </div>
-    <p class="mx-auto mt-8 max-w-7xl px-5 text-center text-xs text-white/70 lg:px-8">© 2026 PieceAcademy Inc. All Rights Reserved.</p>
-  </footer>
+  <site-footer page="about"></site-footer>
 </body>
 </html>

@@ -1,0 +1,197 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>法人向け | PieceAcademy</title>
+  <meta name="description" content="PieceAcademyの法人向けページです。採用・育成・組織強化に向けた最適な学習プランをご提案します。">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            navy: '#0a2f5e',
+            bluebrand: '#165cae',
+            orangebrand: '#f97316',
+            skyline: '#f3f8ff'
+          },
+          boxShadow: {
+            line: '0 0 0 1px rgba(10, 47, 94, 0.10)'
+          }
+        }
+      }
+    };
+  </script>
+  <style>
+    body {
+      font-family: "Hiragino Sans", "Yu Gothic", "Meiryo", system-ui, sans-serif;
+      color: #1f2f46;
+      background: #f7fbff;
+    }
+
+    .hero-grid {
+      background-image:
+        linear-gradient(90deg, rgba(22, 92, 174, 0.06) 1px, transparent 1px),
+        linear-gradient(rgba(22, 92, 174, 0.06) 1px, transparent 1px);
+      background-size: 28px 28px;
+    }
+
+    .flow-title::after {
+      content: "";
+      display: block;
+      width: 54px;
+      height: 3px;
+      margin: 12px auto 0;
+      background: #165cae;
+      border-radius: 999px;
+    }
+
+    .flow-arrow {
+      position: absolute;
+      right: -14px;
+      top: 50%;
+      transform: translateY(-50%);
+      color: #98b6df;
+      font-size: 28px;
+      font-weight: 700;
+      line-height: 1;
+    }
+
+    @media (max-width: 767px) {
+      .flow-arrow {
+        display: none;
+      }
+    }
+  </style>
+  <script src="../js/layout-components.js" defer></script>
+</head>
+<body class="antialiased">
+  <site-header page="corporations"></site-header>
+
+<main>
+    <section class="hero-grid border-b border-slate-200 py-8 md:py-12">
+      <div class="mx-auto max-w-7xl px-5 lg:px-8">
+        <p class="text-xs font-semibold text-slate-500"><a class="hover:text-bluebrand" href="../index.html">Top</a> <span class="px-1">›</span> 法人向け</p>
+
+        <div class="mt-7 grid items-center gap-8 lg:grid-cols-[1.08fr_1fr] lg:gap-12">
+          <div>
+            <p class="text-sm font-black uppercase tracking-[0.16em] text-bluebrand">For Corporations</p>
+            <h1 class="mt-3 text-4xl font-black leading-tight text-navy md:text-6xl">法人の皆様へ<br>最適な学びを、組織の成長へ。</h1>
+            <p class="mt-6 max-w-2xl text-lg leading-9 text-slate-600">PieceAcademyは、企業の採用・育成・組織強化を支援する<br>法人向けプログラミング教育サービスです。<br>貴社の課題や目的に合わせて、最適なプランをご提案します。</p>
+          </div>
+
+          <img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=1280&q=80" alt="高層ビル群" class="h-[300px] w-full rounded-2xl object-cover shadow-line md:h-[360px]">
+        </div>
+      </div>
+    </section>
+
+    <section class="bg-white py-14 md:py-20">
+      <div class="mx-auto max-w-7xl px-5 lg:px-8">
+        <h2 class="flow-title text-center text-4xl font-black text-navy">ご利用の流れ</h2>
+
+        <div class="mt-12 grid gap-4 md:grid-cols-2 lg:grid-cols-4 lg:gap-8">
+          <article class="relative rounded-xl border border-slate-200 bg-white p-6 shadow-line">
+            <span class="grid h-9 w-9 place-items-center rounded-full bg-bluebrand text-sm font-black text-white">1</span>
+            <h3 class="mt-4 text-xl font-black text-navy">お問い合わせ・ご相談</h3>
+            <p class="mt-4 text-sm leading-7 text-slate-600">まずはお問い合わせフォームよりご相談ください。貴社の課題や目的をヒアリングいたします。</p>
+            <span class="flow-arrow" aria-hidden="true">›</span>
+          </article>
+
+          <article class="relative rounded-xl border border-slate-200 bg-white p-6 shadow-line">
+            <span class="grid h-9 w-9 place-items-center rounded-full bg-bluebrand text-sm font-black text-white">2</span>
+            <h3 class="mt-4 text-xl font-black text-navy">ご提案・お見積り</h3>
+            <p class="mt-4 text-sm leading-7 text-slate-600">ヒアリング内容をもとに、最適なプランとお見積りをご提案します。</p>
+            <span class="flow-arrow" aria-hidden="true">›</span>
+          </article>
+
+          <article class="relative rounded-xl border border-slate-200 bg-white p-6 shadow-line">
+            <span class="grid h-9 w-9 place-items-center rounded-full bg-bluebrand text-sm font-black text-white">3</span>
+            <h3 class="mt-4 text-xl font-black text-navy">ご契約・キックオフ</h3>
+            <p class="mt-4 text-sm leading-7 text-slate-600">ご契約後、学習設計や運用体制のすり合わせを行い、キックオフを実施します。</p>
+            <span class="flow-arrow" aria-hidden="true">›</span>
+          </article>
+
+          <article class="rounded-xl border border-slate-200 bg-white p-6 shadow-line">
+            <span class="grid h-9 w-9 place-items-center rounded-full bg-bluebrand text-sm font-black text-white">4</span>
+            <h3 class="mt-4 text-xl font-black text-navy">学習開始・運用サポート</h3>
+            <p class="mt-4 text-sm leading-7 text-slate-600">学習開始後も定期的なレポートやカウンセリングを通じて、成果創出まで伴走します。</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="pb-8">
+      <div class="mx-auto max-w-7xl space-y-5 px-5 lg:px-8">
+        <article class="grid items-center gap-7 rounded-xl border border-emerald-200 bg-emerald-50/65 p-6 shadow-line md:grid-cols-[1.08fr_1fr] md:p-8">
+          <div>
+            <p class="text-sm font-black uppercase tracking-[0.14em] text-emerald-600">For Recruitment Agencies</p>
+            <h3 class="mt-3 text-4xl font-black text-navy">有料職業紹介の会社の皆様</h3>
+            <p class="mt-5 text-base leading-8 text-slate-700">エンジニア人材の紹介価値を高めるためのスキル育成を支援します。<br>紹介先企業のニーズに合った人材を育成することで、成約率・単価の向上に貢献します。</p>
+            <ul class="mt-5 space-y-3 text-[15px] font-semibold text-slate-700">
+              <li class="flex items-center gap-3"><span class="grid h-5 w-5 place-items-center rounded-full bg-emerald-600 text-[11px] text-white">✓</span>紹介候補者のスキルアップ支援</li>
+              <li class="flex items-center gap-3"><span class="grid h-5 w-5 place-items-center rounded-full bg-emerald-600 text-[11px] text-white">✓</span>紹介付加価値の向上</li>
+              <li class="flex items-center gap-3"><span class="grid h-5 w-5 place-items-center rounded-full bg-emerald-600 text-[11px] text-white">✓</span>成約率・単価の向上</li>
+            </ul>
+            <a href="company-detail/recruitment.html" class="mt-7 inline-flex items-center gap-2 rounded-md bg-emerald-600 px-6 py-3 text-sm font-bold text-white transition hover:bg-emerald-700">詳細を見る <span aria-hidden="true">›</span></a>
+          </div>
+
+          <img src="https://images.unsplash.com/photo-1556745757-8d76bdb6984b?auto=format&fit=crop&w=1200&q=80" alt="握手するビジネスパーソン" class="h-64 w-full rounded-xl object-cover md:h-72">
+        </article>
+
+        <article class="grid items-center gap-7 rounded-xl border border-blue-200 bg-blue-50/65 p-6 shadow-line md:grid-cols-[1.08fr_1fr] md:p-8">
+          <div>
+            <p class="text-sm font-black uppercase tracking-[0.14em] text-bluebrand">For SES Sales</p>
+            <h3 class="mt-3 text-4xl font-black text-navy">SES営業の皆様</h3>
+            <p class="mt-5 text-base leading-8 text-slate-700">エンジニアのスキル底上げと、案件獲得力・提案力を強化します。<br>新しい技術領域への対応や、単価交渉の材料としてもご活用いただけます。</p>
+            <ul class="mt-5 space-y-3 text-[15px] font-semibold text-slate-700">
+              <li class="flex items-center gap-3"><span class="grid h-5 w-5 place-items-center rounded-full bg-bluebrand text-[11px] text-white">✓</span>エンジニアのスキル底上げ</li>
+              <li class="flex items-center gap-3"><span class="grid h-5 w-5 place-items-center rounded-full bg-bluebrand text-[11px] text-white">✓</span>案件獲得力の強化</li>
+              <li class="flex items-center gap-3"><span class="grid h-5 w-5 place-items-center rounded-full bg-bluebrand text-[11px] text-white">✓</span>単価交渉の材料化</li>
+            </ul>
+            <a href="company-detail/ses-sales.html" class="mt-7 inline-flex items-center gap-2 rounded-md bg-bluebrand px-6 py-3 text-sm font-bold text-white transition hover:bg-[#124d92]">詳細を見る <span aria-hidden="true">›</span></a>
+          </div>
+
+          <img src="https://images.unsplash.com/photo-1554224154-22dec7ec8818?auto=format&fit=crop&w=1200&q=80" alt="資料を確認する担当者" class="h-64 w-full rounded-xl object-cover md:h-72">
+        </article>
+
+        <article class="grid items-center gap-7 rounded-xl border border-orange-200 bg-orange-50/70 p-6 shadow-line md:grid-cols-[1.08fr_1fr] md:p-8">
+          <div>
+            <p class="text-sm font-black uppercase tracking-[0.14em] text-orange-500">For Dispatch Companies</p>
+            <h3 class="mt-3 text-4xl font-black text-navy">派遣会社の皆様</h3>
+            <p class="mt-5 text-base leading-8 text-slate-700">派遣スタッフのスキル向上と定着率の向上を支援します。<br>教育体制の充実により、顧客満足度の向上にもつながります。</p>
+            <ul class="mt-5 space-y-3 text-[15px] font-semibold text-slate-700">
+              <li class="flex items-center gap-3"><span class="grid h-5 w-5 place-items-center rounded-full bg-orange-500 text-[11px] text-white">✓</span>派遣スタッフのスキル向上</li>
+              <li class="flex items-center gap-3"><span class="grid h-5 w-5 place-items-center rounded-full bg-orange-500 text-[11px] text-white">✓</span>定着率の向上</li>
+              <li class="flex items-center gap-3"><span class="grid h-5 w-5 place-items-center rounded-full bg-orange-500 text-[11px] text-white">✓</span>顧客満足度の向上</li>
+            </ul>
+            <a href="company-detail/dispatch.html" class="mt-7 inline-flex items-center gap-2 rounded-md bg-orangebrand px-6 py-3 text-sm font-bold text-white transition hover:bg-orange-600">詳細を見る <span aria-hidden="true">›</span></a>
+          </div>
+
+          <img src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d?auto=format&fit=crop&w=1200&q=80" alt="会議するビジネスチーム" class="h-64 w-full rounded-xl object-cover md:h-72">
+        </article>
+      </div>
+    </section>
+
+    <section class="py-10">
+      <div class="mx-auto max-w-7xl px-5 lg:px-8">
+        <div class="rounded-xl border border-slate-200 bg-white px-5 py-5 shadow-line md:flex md:items-center md:justify-between md:px-7">
+          <div class="flex items-center gap-4">
+            <span class="grid h-12 w-12 place-items-center rounded-lg bg-blue-50 text-bluebrand">
+              <svg viewBox="0 0 24 24" class="h-7 w-7" aria-hidden="true"><path fill="currentColor" d="M12 2a8 8 0 0 1 8 8v3a3 3 0 0 1-3 3h-3.59L9.7 19.71a1 1 0 0 1-1.7-.71V16H7a3 3 0 0 1-3-3v-3a8 8 0 0 1 8-8Zm0 2a6 6 0 0 0-6 6v3a1 1 0 0 0 1 1h3v2.59L12.59 14H17a1 1 0 0 0 1-1v-3a6 6 0 0 0-6-6Zm-2 5h4a1 1 0 1 1 0 2h-4a1 1 0 1 1 0-2Zm0 3h6a1 1 0 1 1 0 2h-6a1 1 0 1 1 0-2Z"/></svg>
+            </span>
+            <div>
+              <p class="text-2xl font-black text-navy">貴社の課題に合わせた最適なプランをご提案します</p>
+              <p class="mt-1 text-sm font-semibold text-slate-500">まずはお気軽にご相談ください。専門スタッフが対応いたします。</p>
+            </div>
+          </div>
+
+          <a href="../contact/contact.html" class="mt-5 inline-flex items-center justify-center gap-2 rounded-md bg-orangebrand px-8 py-4 text-base font-black text-white transition hover:bg-orange-600 md:mt-0">無料で相談する <span aria-hidden="true">›</span></a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <site-footer page="corporations"></site-footer>
+</body>
+</html>

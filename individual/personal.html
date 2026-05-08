@@ -1,0 +1,285 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>個人向け | PieceAcademy</title>
+  <meta name="description" content="未経験からエンジニア転職、スキルアップ、IT基礎習得まで。あなたの目的に合わせた学習プランをご提案します。">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            navy: '#0a2f5e',
+            bluebrand: '#165cae',
+            orangebrand: '#f97316',
+            skyline: '#f3f8ff'
+          },
+          boxShadow: {
+            line: '0 0 0 1px rgba(10, 47, 94, 0.10)',
+            soft: '0 18px 45px rgba(7, 55, 99, 0.12)'
+          }
+        }
+      }
+    };
+  </script>
+  <style>
+    body {
+      font-family: "Hiragino Sans", "Yu Gothic", "Meiryo", system-ui, sans-serif;
+      color: #1f2f46;
+      background: #f7fbff;
+    }
+
+    .hero-grid {
+      background-image:
+        linear-gradient(90deg, rgba(22, 92, 174, 0.06) 1px, transparent 1px),
+        linear-gradient(rgba(22, 92, 174, 0.06) 1px, transparent 1px);
+      background-size: 28px 28px;
+    }
+
+    .flow-title::after {
+      content: "";
+      display: block;
+      width: 54px;
+      height: 3px;
+      margin: 12px auto 0;
+      background: #165cae;
+      border-radius: 999px;
+    }
+
+    .flow-arrow {
+      position: absolute;
+      right: -14px;
+      top: 50%;
+      transform: translateY(-50%);
+      color: #98b6df;
+      font-size: 28px;
+      font-weight: 700;
+      line-height: 1;
+    }
+
+    @media (max-width: 767px) {
+      .flow-arrow {
+        display: none;
+      }
+    }
+  </style>
+  <script src="../js/layout-components.js" defer></script>
+</head>
+<body class="antialiased">
+  <site-header page="personal"></site-header>
+
+  <main>
+    <!-- ヒーロー -->
+    <section class="hero-grid border-b border-slate-200 py-8 md:py-12">
+      <div class="mx-auto max-w-7xl px-5 lg:px-8">
+        <p class="text-xs font-semibold text-slate-500">
+          <a class="hover:text-bluebrand" href="../index.html">Top</a>
+          <span class="px-1">›</span>
+          個人向け
+        </p>
+
+        <div class="mt-7 grid items-center gap-8 lg:grid-cols-[1.08fr_1fr] lg:gap-12">
+          <div>
+            <p class="text-sm font-black uppercase tracking-[0.16em] text-bluebrand">For Individuals</p>
+            <h1 class="mt-3 text-4xl font-black leading-tight text-navy md:text-6xl">個人の皆様へ<br>あなたの目的に合わせた、学びを。</h1>
+            <p class="mt-6 max-w-2xl text-lg leading-9 text-slate-600">PieceAcademyは、未経験からのエンジニア転職・スキルアップ・<br>IT基礎習得まで、あなたのゴールに合わせた学習プランを<br>ご提案します。</p>
+          </div>
+
+          <img src="https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=1280&q=80" alt="学習するビジネスパーソン" class="h-[300px] w-full rounded-2xl object-cover shadow-line md:h-[360px]">
+        </div>
+      </div>
+    </section>
+
+    <!-- ご利用の流れ -->
+    <section class="bg-white py-14 md:py-20">
+      <div class="mx-auto max-w-7xl px-5 lg:px-8">
+        <h2 class="flow-title text-center text-4xl font-black text-navy">ご利用の流れ</h2>
+
+        <div class="mt-12 grid gap-4 md:grid-cols-2 lg:grid-cols-4 lg:gap-8">
+          <article class="relative rounded-xl border border-slate-200 bg-white p-6 shadow-line">
+            <span class="grid h-9 w-9 place-items-center rounded-full bg-bluebrand text-sm font-black text-white">1</span>
+            <h3 class="mt-4 text-xl font-black text-navy">無料相談</h3>
+            <p class="mt-4 text-sm leading-7 text-slate-600">まずはお問い合わせフォームよりご相談ください。現在の状況や目標をヒアリングいたします。</p>
+            <span class="flow-arrow" aria-hidden="true">›</span>
+          </article>
+
+          <article class="relative rounded-xl border border-slate-200 bg-white p-6 shadow-line">
+            <span class="grid h-9 w-9 place-items-center rounded-full bg-bluebrand text-sm font-black text-white">2</span>
+            <h3 class="mt-4 text-xl font-black text-navy">プラン提案</h3>
+            <p class="mt-4 text-sm leading-7 text-slate-600">ヒアリング内容をもとに、目的・期間・ご予算に合わせた最適な学習プランをご提案します。</p>
+            <span class="flow-arrow" aria-hidden="true">›</span>
+          </article>
+
+          <article class="relative rounded-xl border border-slate-200 bg-white p-6 shadow-line">
+            <span class="grid h-9 w-9 place-items-center rounded-full bg-bluebrand text-sm font-black text-white">3</span>
+            <h3 class="mt-4 text-xl font-black text-navy">学習スタート</h3>
+            <p class="mt-4 text-sm leading-7 text-slate-600">プラン確定後、すぐに学習を開始できます。オンラインで場所を選ばず取り組めます。</p>
+            <span class="flow-arrow" aria-hidden="true">›</span>
+          </article>
+
+          <article class="rounded-xl border border-slate-200 bg-white p-6 shadow-line">
+            <span class="grid h-9 w-9 place-items-center rounded-full bg-bluebrand text-sm font-black text-white">4</span>
+            <h3 class="mt-4 text-xl font-black text-navy">伴走サポート</h3>
+            <p class="mt-4 text-sm leading-7 text-slate-600">学習中も専任講師・カウンセラーが定期的にフォロー。目標達成まで一緒に歩みます。</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- プラン一覧 -->
+    <section class="bg-slate-50 py-14 md:py-20">
+      <div class="mx-auto max-w-6xl px-5 lg:px-8">
+        <h2 class="flow-title text-center text-4xl font-black text-navy mb-12">プラン一覧</h2>
+        <div class="grid items-center gap-6 lg:grid-cols-3">
+
+          <!-- HP制作コース -->
+          <div class="overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-line">
+            <div class="h-1.5 bg-[#1a4d2e]"></div>
+            <div class="p-7">
+              <p class="text-xs font-black uppercase tracking-widest text-slate-400">ENTRY LEVEL</p>
+              <h3 class="mt-2 text-3xl font-black text-navy">HP制作コース</h3>
+              <p class="mt-1 text-sm text-slate-500">副業・フリーランス特化</p>
+              <div class="mt-6 space-y-4">
+                <div class="flex items-center justify-between">
+                  <div class="flex items-center gap-3">
+                    <span class="grid h-7 w-7 shrink-0 place-items-center rounded-full bg-slate-200 text-sm font-black text-slate-600">2</span>
+                    <div>
+                      <p class="text-sm font-bold text-navy">月2回プラン</p>
+                      <p class="text-xs text-slate-400">じっくり自分のペースで学習</p>
+                    </div>
+                  </div>
+                  <p class="shrink-0 text-lg font-black text-[#1a7c3e]">¥15,000<span class="text-xs font-semibold text-slate-400">/月</span></p>
+                </div>
+                <div class="flex items-center justify-between">
+                  <div class="flex items-center gap-3">
+                    <span class="grid h-7 w-7 shrink-0 place-items-center rounded-full bg-[#1a4d2e] text-sm font-black text-white">4</span>
+                    <div>
+                      <p class="text-sm font-bold text-navy">月4回プラン <span class="text-xs font-black text-red-500">人気</span></p>
+                      <p class="text-xs text-slate-400">内定までのスピードが1.5倍UP</p>
+                    </div>
+                  </div>
+                  <p class="shrink-0 text-lg font-black text-[#1a7c3e]">¥30,000<span class="text-xs font-semibold text-slate-400">/月</span></p>
+                </div>
+              </div>
+
+              <ul class="mt-7 space-y-2">
+                <li class="flex items-center gap-2 text-sm text-slate-700"><span class="font-black text-[#1a7c3e]">✓</span> HTML / CSS / JS 基礎</li>
+                <li class="flex items-center gap-2 text-sm text-slate-700"><span class="font-black text-[#1a7c3e]">✓</span> PHP・Java 開発基礎</li>
+                <li class="flex items-center gap-2 text-sm text-slate-700"><span class="font-black text-[#1a7c3e]">✓</span> 案件獲得支援サポート付</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- システム開発コース（おすすめ） -->
+          <div class="relative pt-5">
+            <div class="absolute left-1/2 top-0 -translate-x-1/2 whitespace-nowrap rounded-full bg-amber-400 px-5 py-2 text-sm font-black text-white shadow">★ Market Value UP</div>
+            <div class="overflow-hidden rounded-2xl border-2 border-amber-400 bg-white shadow-soft">
+              <div class="p-7 pt-8">
+                <p class="text-xs font-black uppercase tracking-widest text-amber-500">RECOMMENDED</p>
+                <h3 class="mt-2 text-3xl font-black text-navy">システム開発コース</h3>
+                <p class="mt-1 text-sm text-slate-500">現場即戦力を目指す方向け</p>
+
+                <div class="mt-6 space-y-4">
+                  <div class="flex items-center justify-between">
+                    <div class="flex items-center gap-3">
+                      <span class="grid h-7 w-7 shrink-0 place-items-center rounded-full bg-slate-200 text-sm font-black text-slate-600">2</span>
+                      <div>
+                        <p class="text-sm font-bold text-navy">月2回プラン</p>
+                        <p class="text-xs text-slate-400">確実な基礎定着とスキルアップ</p>
+                      </div>
+                    </div>
+                    <p class="shrink-0 text-lg font-black text-[#1a7c3e]">¥18,000<span class="text-xs font-semibold text-slate-400">/月</span></p>
+                  </div>
+
+                  <div class="flex items-center justify-between rounded-xl bg-emerald-50 p-3">
+                    <div class="flex items-center gap-3">
+                      <span class="grid h-7 w-7 shrink-0 place-items-center rounded-full bg-[#1a4d2e] text-sm font-black text-white">4</span>
+                      <div>
+                        <p class="text-sm font-bold text-navy">月4回プラン <span class="text-xs font-black text-emerald-600">LIMITED OFFER</span></p>
+                        <p class="text-xs text-slate-400">最短3ヶ月で即戦力エンジニアへ</p>
+                      </div>
+                    </div>
+                    <p class="shrink-0 text-lg font-black text-[#1a7c3e]">¥36,000<span class="text-xs font-semibold text-slate-400">/月</span></p>
+                  </div>
+                </div>
+
+                <ul class="mt-7 space-y-2">
+                  <li class="flex items-center gap-2 text-sm text-slate-700"><span class="font-black text-[#1a7c3e]">✓</span> JAVA / PHP 実装</li>
+                  <li class="flex items-center gap-2 text-sm text-slate-700"><span class="font-black text-[#1a7c3e]">✓</span> データベース・設計手法</li>
+                  <li class="flex items-center gap-2 text-sm text-slate-700"><span class="font-black text-[#1a7c3e]">✓</span> 専属キャリアアドバイザー付</li>
+                </ul>
+
+                <a href="../contact/contact.html" class="mt-7 flex items-center justify-center gap-2 rounded-xl bg-[#1a4d2e] px-6 py-4 text-base font-black text-white transition hover:bg-[#0f3320]">このコースで人生を変える <span aria-hidden="true">›</span></a>
+              </div>
+            </div>
+          </div>
+
+          <!-- アプリ開発コース -->
+          <div class="overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-line">
+            <div class="h-1.5 bg-[#1a4d2e]"></div>
+            <div class="p-7">
+              <p class="text-xs font-black uppercase tracking-widest text-slate-400">EXPERT TIER</p>
+              <h3 class="mt-2 text-3xl font-black text-navy">アプリ開発コース</h3>
+              <p class="mt-1 text-sm text-slate-500">次世代技術を極める方向け</p>
+
+              <div class="mt-6 space-y-4">
+                <div class="flex items-center justify-between">
+                  <div class="flex items-center gap-3">
+                    <span class="grid h-7 w-7 shrink-0 place-items-center rounded-full bg-slate-200 text-sm font-black text-slate-600">2</span>
+                    <div>
+                      <p class="text-sm font-bold text-navy">月2回プラン</p>
+                      <p class="text-xs text-slate-400">ハイレベルな土台構築</p>
+                    </div>
+                  </div>
+                  <p class="shrink-0 text-lg font-black text-[#1a7c3e]">¥20,000<span class="text-xs font-semibold text-slate-400">/月</span></p>
+                </div>
+
+                <div class="flex items-center justify-between">
+                  <div class="flex items-center gap-3">
+                    <span class="grid h-7 w-7 shrink-0 place-items-center rounded-full bg-[#1a4d2e] text-sm font-black text-white">4</span>
+                    <div>
+                      <p class="text-sm font-bold text-navy">月4回プラン</p>
+                      <p class="text-xs text-slate-400">ハイエンドな技術ポートフォリオ完成</p>
+                    </div>
+                  </div>
+                  <p class="shrink-0 text-lg font-black text-[#1a7c3e]">¥40,000<span class="text-xs font-semibold text-slate-400">/月</span></p>
+                </div>
+              </div>
+
+              <ul class="mt-7 space-y-2">
+                <li class="flex items-center gap-2 text-sm text-slate-700"><span class="font-black text-[#1a7c3e]">✓</span> React / Next.js / TS マスタ</li>
+                <li class="flex items-center gap-2 text-sm text-slate-700"><span class="font-black text-[#1a7c3e]">✓</span> モダン開発環境構築 (CI/CD)</li>
+                <li class="flex items-center gap-2 text-sm text-slate-700"><span class="font-black text-[#1a7c3e]">✓</span> 独自ポートフォリオ完成・発信</li>
+              </ul>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="py-10">
+      <div class="mx-auto max-w-7xl px-5 lg:px-8">
+        <div class="rounded-xl border border-slate-200 bg-white px-5 py-5 shadow-line md:flex md:items-center md:justify-between md:px-7">
+          <div class="flex items-center gap-4">
+            <span class="grid h-12 w-12 place-items-center rounded-lg bg-blue-50 text-bluebrand">
+              <svg viewBox="0 0 24 24" class="h-7 w-7" aria-hidden="true"><path fill="currentColor" d="M12 2a8 8 0 0 1 8 8v3a3 3 0 0 1-3 3h-3.59L9.7 19.71a1 1 0 0 1-1.7-.71V16H7a3 3 0 0 1-3-3v-3a8 8 0 0 1 8-8Zm0 2a6 6 0 0 0-6 6v3a1 1 0 0 0 1 1h3v2.59L12.59 14H17a1 1 0 0 0 1-1v-3a6 6 0 0 0-6-6Zm-2 5h4a1 1 0 1 1 0 2h-4a1 1 0 1 1 0-2Zm0 3h6a1 1 0 1 1 0 2h-6a1 1 0 1 1 0-2Z"/></svg>
+            </span>
+            <div>
+              <p class="text-2xl font-black text-navy">あなたの目標に合わせた最適なプランをご提案します</p>
+              <p class="mt-1 text-sm font-semibold text-slate-500">まずはお気軽にご相談ください。専任スタッフが対応いたします。</p>
+            </div>
+          </div>
+
+          <a href="../contact/contact.html" class="mt-5 inline-flex items-center justify-center gap-2 rounded-md bg-orangebrand px-8 py-4 text-base font-black text-white transition hover:bg-orange-600 md:mt-0">無料で相談する <span aria-hidden="true">›</span></a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <site-footer page="personal"></site-footer>
+</body>
+</html>
