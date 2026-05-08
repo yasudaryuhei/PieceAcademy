@@ -46,6 +46,16 @@
     .photo-office {
       background-image: url("https://images.unsplash.com/photo-1497366811353-6870744d04b2?auto=format&fit=crop&w=1400&q=80");
     }
+
+    .service-title::after {
+      content: "";
+      display: block;
+      width: 62px;
+      height: 3px;
+      margin-top: 12px;
+      border-radius: 999px;
+      background: linear-gradient(90deg, #0b63b6, #12937f);
+    }
   </style>
   <script src="../js/layout-components.js" defer></script>
 </head>
@@ -54,10 +64,10 @@
 
 <main>
     <section class="bg-white border-b border-slate-200">
-    <div class="mx-auto grid max-w-7xl gap-8 px-5 py-16 lg:grid-cols-[1fr_420px] lg:px-8">
+    <div class="mx-auto grid max-w-7xl gap-8 px-5 py-24 lg:grid-cols-[1fr_420px] lg:px-8">
       <div>
         <p class="text-sm font-black uppercase tracking-[0.18em] text-bluebrand">Services</p>
-        <h1 class="mt-5 text-4xl font-black leading-tight text-navy md:text-5xl">サービス</h1>
+        <h1 class="mt-5 text-3xl font-black leading-tight text-navy md:text-4xl">サービス</h1>
         <p class="mt-6 max-w-2xl text-base leading-8 text-slate-700">個人のキャリア形成から企業のDX人材育成まで、目的に合わせた支援を提供します。</p>
         <a href="../contact/contact.html" class="mt-8 inline-flex items-center gap-3 rounded-md bg-bluebrand px-6 py-4 text-sm font-bold text-white shadow-soft">サービス相談へ<span aria-hidden="true">›</span></a>
       </div>
@@ -68,41 +78,129 @@
       </div>
     </div>
   </section>
-    <section class="bg-white py-16">
-    <div class="mx-auto max-w-7xl px-5 lg:px-8">
-      <div class="grid gap-5 md:grid-cols-3">
-        <article class="rounded-lg border border-slate-200 bg-white p-7 shadow-line">
-    <span class="mb-5 grid h-12 w-12 place-items-center rounded-md bg-bluebrand text-lg font-black text-white">✓</span>
-    <h2 class="text-xl font-black text-navy">Codelya</h2>
-    <p class="mt-3 text-sm leading-7 text-slate-600">未経験からエンジニア転職を目指す方向けのプログラミングスクール。</p>
-  </article><article class="rounded-lg border border-slate-200 bg-white p-7 shadow-line">
-    <span class="mb-5 grid h-12 w-12 place-items-center rounded-md bg-bluebrand text-lg font-black text-white">✓</span>
-    <h2 class="text-xl font-black text-navy">企業向けDX人材育成</h2>
-    <p class="mt-3 text-sm leading-7 text-slate-600">業務課題に合わせて、実務で使えるデジタル人材を育てます。</p>
-  </article><article class="rounded-lg border border-slate-200 bg-white p-7 shadow-line">
-    <span class="mb-5 grid h-12 w-12 place-items-center rounded-md bg-bluebrand text-lg font-black text-white">✓</span>
-    <h2 class="text-xl font-black text-navy">SES育成・人材支援</h2>
-    <p class="mt-3 text-sm leading-7 text-slate-600">現場で活躍できるIT人材の育成とキャリア形成を支援します。</p>
-  </article>
+    <section class="bg-white py-24">
+      <div class="mx-auto max-w-7xl px-5 lg:px-8">
+        <h2 class="service-title text-3xl font-black text-navy">提供サービスの詳細</h2>
+        <p class="mt-6 max-w-4xl text-base leading-8 text-slate-700">
+          PieceAcademyは、単に講座を提供するのではなく、目標設定から実践、成果の定着までを一貫して支援します。
+          個人向けには学習とキャリアの両面支援を、法人向けには現場課題に合わせた研修設計と運用支援を行い、
+          学びが実務で使える状態になるまで伴走します。
+        </p>
+
+        <div class="mt-12 grid gap-7 md:grid-cols-3">
+          <article class="rounded-2xl border border-slate-200 bg-white p-8 shadow-line">
+            <span class="mb-5 grid h-12 w-12 place-items-center rounded-md bg-tealbrand text-lg font-black text-white">01</span>
+            <h3 class="text-xl font-black text-navy">企業向けDX人材育成</h3>
+            <p class="mt-4 text-sm leading-8 text-slate-600">企業課題と対象職種に合わせて研修内容を設計し、受講後に現場で活かせるレベルまでの定着を支援します。</p>
+            <ul class="mt-5 space-y-2 text-sm font-semibold text-slate-700">
+              <li class="flex gap-2"><span class="text-tealbrand">●</span>課題ヒアリングに基づくカリキュラム設計</li>
+              <li class="flex gap-2"><span class="text-tealbrand">●</span>実務ケースを取り入れた演習型研修</li>
+              <li class="flex gap-2"><span class="text-tealbrand">●</span>運用改善まで含めた伴走支援</li>
+            </ul>
+            <a href="../company/corporations.html" class="mt-6 inline-flex items-center gap-2 text-sm font-bold text-tealbrand hover:underline">法人向け詳細を見る <span aria-hidden="true">›</span></a>
+          </article>
+
+          <article class="rounded-2xl border border-slate-200 bg-white p-8 shadow-line">
+            <span class="mb-5 grid h-12 w-12 place-items-center rounded-md bg-orangebrand text-lg font-black text-white">02</span>
+            <h3 class="text-xl font-black text-navy">SES育成・人材支援</h3>
+            <p class="mt-4 text-sm leading-8 text-slate-600">SES領域で求められる技術力・提案力・キャリア設計をバランスよく支援し、現場で活躍できる人材育成を実現します。</p>
+            <ul class="mt-5 space-y-2 text-sm font-semibold text-slate-700">
+              <li class="flex gap-2"><span class="text-orangebrand">●</span>案件要件に合わせたスキル強化</li>
+              <li class="flex gap-2"><span class="text-orangebrand">●</span>提案時に活用できる成果の可視化</li>
+              <li class="flex gap-2"><span class="text-orangebrand">●</span>中長期の成長を見据えたキャリア支援</li>
+            </ul>
+            <a href="../contact/contact.html" class="mt-6 inline-flex items-center gap-2 text-sm font-bold text-orangebrand hover:underline">SES支援について相談する <span aria-hidden="true">›</span></a>
+          </article>
+
+          <article class="rounded-2xl border border-slate-200 bg-white p-8 shadow-line">
+            <span class="mb-5 grid h-12 w-12 place-items-center rounded-md bg-bluebrand text-lg font-black text-white">03</span>
+            <h3 class="text-xl font-black text-navy">Codelya（個人向け）</h3>
+            <p class="mt-4 text-sm leading-8 text-slate-600">未経験からの学習開始を想定し、基礎習得から実践課題、ポートフォリオ制作まで段階的に支援するプログラミングスクールです。</p>
+            <ul class="mt-5 space-y-2 text-sm font-semibold text-slate-700">
+              <li class="flex gap-2"><span class="text-bluebrand">●</span>基礎から実践までのステップ設計</li>
+              <li class="flex gap-2"><span class="text-bluebrand">●</span>学習継続を支える定期サポート</li>
+              <li class="flex gap-2"><span class="text-bluebrand">●</span>転職や副業に向けたアウトプット支援</li>
+            </ul>
+            <a href="https://codelya.pages.dev/" class="mt-6 inline-flex items-center gap-2 text-sm font-bold text-bluebrand hover:underline">Codelyaを見る <span aria-hidden="true">›</span></a>
+          </article>
+        </div>
       </div>
-      <div class="mt-8 grid gap-5 lg:grid-cols-2">
-        <article class="rounded-lg border border-bluebrand bg-white p-7 shadow-line">
-    <h2 class="text-2xl font-black text-bluebrand">個人向け</h2>
-    <ul class="mt-5 space-y-3 text-sm font-semibold text-slate-700">
-      <li class="flex gap-3"><span class="text-bluebrand">●</span>プログラミングを基礎から学びたい</li><li class="flex gap-3"><span class="text-bluebrand">●</span>未経験から転職したい</li><li class="flex gap-3"><span class="text-bluebrand">●</span>ポートフォリオを作りたい</li>
-    </ul>
-    <a href="../contact/contact.html" class="mt-7 inline-flex w-full justify-center rounded-md bg-bluebrand px-5 py-4 text-sm font-bold text-white">相談する</a>
-  </article>
-        <article class="rounded-lg border border-tealbrand bg-white p-7 shadow-line">
-    <h2 class="text-2xl font-black text-tealbrand">法人向け</h2>
-    <ul class="mt-5 space-y-3 text-sm font-semibold text-slate-700">
-      <li class="flex gap-3"><span class="text-tealbrand">●</span>社内のDXを進めたい</li><li class="flex gap-3"><span class="text-tealbrand">●</span>IT研修を体系化したい</li><li class="flex gap-3"><span class="text-tealbrand">●</span>現場に合わせた育成をしたい</li>
-    </ul>
-    <a href="../contact/contact.html" class="mt-7 inline-flex w-full justify-center rounded-md bg-tealbrand px-5 py-4 text-sm font-bold text-white">相談する</a>
-  </article>
+    </section>
+
+    <section class="border-y border-slate-200 bg-skysoft py-24">
+      <div class="mx-auto max-w-7xl px-5 lg:px-8">
+        <h2 class="service-title text-3xl font-black text-navy">支援の進め方</h2>
+        <p class="mt-6 max-w-4xl text-base leading-8 text-slate-700">
+          ご相談内容に応じて、最初に現状とゴールを整理し、必要な支援範囲を明確にします。
+          その後、実行しやすい形に計画を落とし込み、進捗の見える化と定期的な改善を通じて成果の再現性を高めていきます。
+        </p>
+
+        <div class="mt-12 grid gap-6 md:grid-cols-3">
+          <article class="rounded-xl border border-slate-200 bg-white p-7 shadow-line">
+            <p class="text-xs font-black uppercase tracking-[0.16em] text-bluebrand">Step 1</p>
+            <h3 class="mt-2 text-xl font-black text-navy">現状ヒアリング</h3>
+            <p class="mt-3 text-sm leading-8 text-slate-600">目的、課題、現状スキルを整理し、優先すべきテーマを明確にします。</p>
+          </article>
+          <article class="rounded-xl border border-slate-200 bg-white p-7 shadow-line">
+            <p class="text-xs font-black uppercase tracking-[0.16em] text-bluebrand">Step 2</p>
+            <h3 class="mt-2 text-xl font-black text-navy">計画設計と実行</h3>
+            <p class="mt-3 text-sm leading-8 text-slate-600">目標に合わせてカリキュラムと運用を設計し、学習や研修を実行します。</p>
+          </article>
+          <article class="rounded-xl border border-slate-200 bg-white p-7 shadow-line">
+            <p class="text-xs font-black uppercase tracking-[0.16em] text-bluebrand">Step 3</p>
+            <h3 class="mt-2 text-xl font-black text-navy">定着化と改善</h3>
+            <p class="mt-3 text-sm leading-8 text-slate-600">進捗確認と振り返りを繰り返し、成果を定着させながら次の成長につなげます。</p>
+          </article>
+        </div>
       </div>
-    </div>
-  </section>
+    </section>
+
+    <section class="bg-white py-24">
+      <div class="mx-auto max-w-7xl px-5 lg:px-8">
+        <h2 class="service-title text-3xl font-black text-navy">対象別サービス案内</h2>
+        <div class="mt-10 grid gap-7 lg:grid-cols-2">
+          <article class="rounded-2xl border border-tealbrand bg-white p-8 shadow-line">
+            <h3 class="text-2xl font-black text-tealbrand">法人向け</h3>
+            <p class="mt-4 text-sm leading-8 text-slate-600">企業課題に合わせたDX人材育成、研修設計、運用支援まで、実務活用を見据えた支援を提供します。</p>
+            <ul class="mt-5 space-y-3 text-sm font-semibold text-slate-700">
+              <li class="flex gap-3"><span class="text-tealbrand">●</span>社内のDXを進めたい</li>
+              <li class="flex gap-3"><span class="text-tealbrand">●</span>IT研修を体系化したい</li>
+              <li class="flex gap-3"><span class="text-tealbrand">●</span>現場に合わせた育成をしたい</li>
+            </ul>
+            <div class="mt-7 flex flex-wrap gap-3">
+              <a href="../company/corporations.html" class="inline-flex items-center justify-center gap-2 rounded-md border border-tealbrand px-5 py-3 text-sm font-bold text-tealbrand hover:bg-emerald-50">法人向けページへ <span aria-hidden="true">›</span></a>
+              <a href="../contact/contact.html" class="inline-flex items-center justify-center gap-2 rounded-md bg-tealbrand px-5 py-3 text-sm font-bold text-white hover:bg-[#0d7b6a]">相談する <span aria-hidden="true">›</span></a>
+            </div>
+          </article>
+
+          <article class="rounded-2xl border border-bluebrand bg-white p-8 shadow-line">
+            <h3 class="text-2xl font-black text-bluebrand">個人向け</h3>
+            <p class="mt-4 text-sm leading-8 text-slate-600">未経験からの学習、転職準備、実務力の強化まで、現在地と目標に合わせたプランを提案します。</p>
+            <ul class="mt-5 space-y-3 text-sm font-semibold text-slate-700">
+              <li class="flex gap-3"><span class="text-bluebrand">●</span>プログラミングを基礎から学びたい</li>
+              <li class="flex gap-3"><span class="text-bluebrand">●</span>未経験から転職したい</li>
+              <li class="flex gap-3"><span class="text-bluebrand">●</span>ポートフォリオを作りたい</li>
+            </ul>
+            <div class="mt-7 flex flex-wrap gap-3">
+              <a href="../individual/personal.html" class="inline-flex items-center justify-center gap-2 rounded-md border border-bluebrand px-5 py-3 text-sm font-bold text-bluebrand hover:bg-skysoft">個人向けページへ <span aria-hidden="true">›</span></a>
+              <a href="../contact/contact.html" class="inline-flex items-center justify-center gap-2 rounded-md bg-bluebrand px-5 py-3 text-sm font-bold text-white hover:bg-navy">相談する <span aria-hidden="true">›</span></a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+    <section class="pb-24">
+      <div class="mx-auto max-w-7xl px-5 lg:px-8">
+        <div class="rounded-2xl border border-blue-100 bg-gradient-to-r from-blue-50 via-white to-emerald-50 p-8 shadow-line md:flex md:items-center md:justify-between md:p-10">
+          <div>
+            <p class="text-sm font-black uppercase tracking-[0.16em] text-bluebrand">Contact Us</p>
+            <h2 class="mt-3 text-3xl font-black text-navy">まずは、今の課題を聞かせてください。</h2>
+            <p class="mt-4 max-w-2xl text-sm leading-8 text-slate-600">個人の学習相談から法人の研修設計まで、状況に合わせて最適な進め方をご提案します。具体的に決まっていない段階でも問題ありません。</p>
+          </div>
+          <a href="../contact/contact.html" class="mt-7 inline-flex items-center justify-center gap-2 rounded-xl bg-bluebrand px-8 py-4 text-base font-black text-white transition hover:bg-[#09539a] md:mt-0">無料で相談する <span aria-hidden="true">›</span></a>
+        </div>
+      </div>
+    </section>
   </main>
   <site-footer page="services"></site-footer>
 </body>

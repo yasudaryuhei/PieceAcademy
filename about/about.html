@@ -46,6 +46,16 @@
     .photo-office {
       background-image: url("https://images.unsplash.com/photo-1497366811353-6870744d04b2?auto=format&fit=crop&w=1400&q=80");
     }
+
+    .about-title::after {
+      content: "";
+      display: block;
+      width: 64px;
+      height: 3px;
+      margin-top: 14px;
+      border-radius: 999px;
+      background: linear-gradient(90deg, #0b63b6, #12937f);
+    }
   </style>
   <script src="../js/layout-components.js" defer></script>
 </head>
@@ -53,11 +63,46 @@
   <site-header page="about"></site-header>
 
 <main>
+    <!-- <section class="border-b border-slate-200 bg-white">
+      <div class="mx-auto grid max-w-7xl gap-10 px-5 py-24 lg:grid-cols-[1.1fr_0.9fr] lg:px-8">
+        <div>
+          <p class="text-sm font-black uppercase tracking-[0.18em] text-bluebrand">About PieceAcademy</p>
+          <h1 class="mt-5 text-4xl font-black leading-tight text-navy md:text-5xl">学びを、未来の行動に変える。<br>それがPieceAcademyです。</h1>
+          <p class="mt-7 text-base leading-8 text-slate-700">
+            PieceAcademyは、プログラミング学習とDX人材育成を軸に、個人と法人の両方に寄り添う教育ブランドです。
+            知識を増やすだけでなく、現場で使える状態まで伴走することを重視し、学びの計画設計から実践、振り返りまでを一貫して支援しています。
+          </p>
+          <p class="mt-5 text-base leading-8 text-slate-700">
+            「何を学べばいいかわからない」「育成が場当たり的になっている」「学びが成果につながらない」といった悩みに対して、
+            目的起点でのカリキュラム設計と、継続しやすい運用の仕組みづくりで応えます。
+          </p>
+          <a href="../contact/contact.html" class="mt-9 inline-flex items-center gap-3 rounded-xl bg-bluebrand px-7 py-4 text-sm font-bold text-white shadow-soft transition hover:-translate-y-0.5 hover:bg-[#09539a]">無料相談へ<span aria-hidden="true">›</span></a>
+        </div>
+
+        <div class="space-y-6">
+          <div class="photo-classroom min-h-56 rounded-2xl bg-cover bg-center p-6 text-white shadow-soft md:min-h-64">
+            <p class="text-xs font-black uppercase tracking-[0.2em] text-white/80">Learning Design</p>
+            <p class="mt-4 max-w-sm text-2xl font-black leading-tight">目的に合わせて、学びの道筋を設計する。</p>
+          </div>
+          <div class="grid gap-4 sm:grid-cols-2">
+            <article class="rounded-2xl border border-blue-100 bg-blue-50/60 p-5">
+              <p class="text-xs font-black uppercase tracking-wider text-bluebrand">個人支援</p>
+              <p class="mt-2 text-sm leading-7 text-slate-700">未経験学習、キャリア相談、転職準備まで段階的に支援。</p>
+            </article>
+            <article class="rounded-2xl border border-emerald-100 bg-emerald-50/60 p-5">
+              <p class="text-xs font-black uppercase tracking-wider text-tealbrand">法人支援</p>
+              <p class="mt-2 text-sm leading-7 text-slate-700">DX推進、IT研修、育成体制づくりを実務視点で支援。</p>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section> -->
+
     <section class="bg-white border-b border-slate-200">
-    <div class="mx-auto grid max-w-7xl gap-8 px-5 py-16 lg:grid-cols-[1fr_420px] lg:px-8">
+    <div class="mx-auto grid max-w-7xl gap-8 px-5 py-24 lg:grid-cols-[1fr_420px] lg:px-8">
       <div>
         <p class="text-sm font-black uppercase tracking-[0.18em] text-bluebrand">About</p>
-        <h1 class="mt-5 text-4xl font-black leading-tight text-navy md:text-5xl">PieceAcademyとは</h1>
+        <h1 class="mt-5 text-3xl font-black leading-tight text-navy md:text-4xl">PieceAcademyとは</h1>
         <p class="mt-6 max-w-2xl text-base leading-8 text-slate-700">学びを現場の力へ変える、IT・DX教育の伴走ブランドです。</p>
         <a href="../contact/contact.html" class="mt-8 inline-flex items-center gap-3 rounded-md bg-bluebrand px-6 py-4 text-sm font-bold text-white shadow-soft">無料相談へ<span aria-hidden="true">›</span></a>
       </div>
@@ -68,31 +113,118 @@
       </div>
     </div>
   </section>
-    <section class="bg-white py-16">
-    <div class="mx-auto max-w-7xl px-5 lg:px-8">
-      <div class="grid gap-5 md:grid-cols-3">
-        <article class="rounded-lg border border-slate-200 bg-white p-7 shadow-line">
-    <span class="mb-5 grid h-12 w-12 place-items-center rounded-md bg-bluebrand text-lg font-black text-white">✓</span>
-    <h2 class="text-xl font-black text-navy">個人から法人まで</h2>
-    <p class="mt-3 text-sm leading-7 text-slate-600">未経験者の学習支援から、企業のDX人材育成まで幅広く対応します。</p>
-  </article>
-        <article class="rounded-lg border border-slate-200 bg-white p-7 shadow-line">
-    <span class="mb-5 grid h-12 w-12 place-items-center rounded-md bg-bluebrand text-lg font-black text-white">✓</span>
-    <h2 class="text-xl font-black text-navy">実践につながる学習</h2>
-    <p class="mt-3 text-sm leading-7 text-slate-600">カリキュラムはアウトプット重視。学びを仕事や現場の行動に変えます。</p>
-  </article>
-        <article class="rounded-lg border border-slate-200 bg-white p-7 shadow-line">
-    <span class="mb-5 grid h-12 w-12 place-items-center rounded-md bg-bluebrand text-lg font-black text-white">✓</span>
-    <h2 class="text-xl font-black text-navy">相談しやすい体制</h2>
-    <p class="mt-3 text-sm leading-7 text-slate-600">専任スタッフが学習、キャリア、研修設計の不安を整理します。</p>
-  </article>
+
+    <section class="bg-white py-24">
+      <div class="mx-auto max-w-7xl px-5 lg:px-8">
+        <h2 class="about-title text-3xl font-black text-navy">PieceAcademyが大切にしていること</h2>
+        <p class="mt-7 max-w-4xl text-base leading-8 text-slate-700">
+          私たちは、教育を「情報提供」で終わらせず、「行動変化」と「成果創出」までつなげることを価値の中心に置いています。
+          そのために、受講開始前の目的整理、学習中の進捗可視化、実践フェーズでの課題解決支援という3つのプロセスを重視し、
+          学ぶ人と組織の両方が無理なく前進できる状態をつくります。
+        </p>
+
+        <div class="mt-12 grid gap-7 md:grid-cols-3">
+          <article class="rounded-2xl border border-slate-200 bg-white p-8 shadow-line">
+            <span class="mb-5 grid h-12 w-12 place-items-center rounded-md bg-bluebrand text-lg font-black text-white">01</span>
+            <h3 class="text-xl font-black text-navy">目的から逆算する設計</h3>
+            <p class="mt-4 text-sm leading-8 text-slate-600">学習そのものを目的化せず、転職・業務改善・組織成長などのゴールから逆算して、最適な内容と優先順位を設計します。</p>
+          </article>
+          <article class="rounded-2xl border border-slate-200 bg-white p-8 shadow-line">
+            <span class="mb-5 grid h-12 w-12 place-items-center rounded-md bg-bluebrand text-lg font-black text-white">02</span>
+            <h3 class="text-xl font-black text-navy">実践に寄せた学習体験</h3>
+            <p class="mt-4 text-sm leading-8 text-slate-600">インプット偏重ではなく、演習・レビュー・振り返りを組み込んだ運用で、現場で使えるスキルとして定着する学習体験を提供します。</p>
+          </article>
+          <article class="rounded-2xl border border-slate-200 bg-white p-8 shadow-line">
+            <span class="mb-5 grid h-12 w-12 place-items-center rounded-md bg-bluebrand text-lg font-black text-white">03</span>
+            <h3 class="text-xl font-black text-navy">継続できる伴走体制</h3>
+            <p class="mt-4 text-sm leading-8 text-slate-600">学習のつまずきや優先順位の迷いを都度解消し、短期的な達成だけでなく、長期的な成長につながる継続支援を行います。</p>
+          </article>
+        </div>
       </div>
-      <div class="mt-10 rounded-lg border border-slate-200 bg-skysoft p-8">
-        <h2 class="text-2xl font-black text-navy">私たちが大切にしていること</h2>
-        <p class="mt-4 text-sm leading-8 text-slate-700">技術は覚えて終わりではありません。PieceAcademyは、学び始める前の目的整理から、実践後の振り返りまでを一貫して支援し、学ぶ人が自分の可能性を広げられる状態をつくります。</p>
+    </section>
+
+    <section class="border-y border-slate-200 bg-skysoft py-24">
+      <div class="mx-auto grid max-w-7xl items-center gap-10 px-5 lg:grid-cols-[1fr_1fr] lg:px-8">
+        
+        <div class="photo-meeting min-h-[420px] rounded-2xl bg-cover bg-center p-8 text-white shadow-soft">
+          <p class="text-xs font-black uppercase tracking-[0.2em] text-white/75">Our Process</p>
+          <ol class="mt-7 space-y-6">
+            <li class="rounded-xl border border-white/30 bg-white/10 p-5 backdrop-blur-sm">
+              <p class="text-xs font-black tracking-[0.16em]">STEP 1</p>
+              <p class="mt-2 text-xl font-black">現状整理と目的設定</p>
+              <p class="mt-2 text-sm leading-7 text-white/85">目指す状態を明確化し、優先して取り組むテーマを整理します。</p>
+            </li>
+            <li class="rounded-xl border border-white/30 bg-white/10 p-5 backdrop-blur-sm">
+              <p class="text-xs font-black tracking-[0.16em]">STEP 2</p>
+              <p class="mt-2 text-xl font-black">設計と実行</p>
+              <p class="mt-2 text-sm leading-7 text-white/85">目的に合わせた学習・研修プランを実行し、進捗を可視化しながら改善します。</p>
+            </li>
+            <li class="rounded-xl border border-white/30 bg-white/10 p-5 backdrop-blur-sm">
+              <p class="text-xs font-black tracking-[0.16em]">STEP 3</p>
+              <p class="mt-2 text-xl font-black">成果の定着と次の一歩</p>
+              <p class="mt-2 text-sm leading-7 text-white/85">実務適用やキャリア転換につながる成果を確認し、次の成長計画へ接続します。</p>
+            </li>
+          </ol>
+        </div>
+        <div>
+          <h2 class="about-title text-3xl font-black text-navy">私たちの取り組み</h2>
+          <p class="mt-7 text-base leading-8 text-slate-700">
+            PieceAcademyでは、単発の講座提供ではなく、学習成果が実務やキャリアに接続されるまでの導線づくりを重視しています。
+            個人向けには「学習計画の最適化」「ポートフォリオ・アウトプット支援」「キャリア相談」を、法人向けには
+            「課題ヒアリング」「研修設計」「運用改善」の3段階で伴走し、現場で使える力の育成を目指します。
+          </p>
+          <div class="mt-8 space-y-5">
+            <div class="rounded-xl border border-slate-200 bg-white p-5 shadow-line">
+              <p class="text-sm font-black text-tealbrand">法人向け</p>
+              <p class="mt-2 text-sm leading-7 text-slate-600">事業課題や職種特性を踏まえ、研修を導入して終わりにしない運用設計を実施。学習効果の定着と再現性の高い育成を支援します。</p>
+              <a href="../company/corporations.html" class="mt-4 inline-flex items-center gap-2 rounded-lg bg-tealbrand px-5 py-3 text-sm font-bold text-white transition hover:bg-[#0d7b6a]">法人向けページを見る <span aria-hidden="true">›</span></a>
+            </div>
+            <div class="rounded-xl border border-slate-200 bg-white p-5 shadow-line">
+              <p class="text-sm font-black text-bluebrand">個人向け</p>
+              <p class="mt-2 text-sm leading-7 text-slate-600">未経験からの学習開始、転職に向けた実践力の強化、現職でのスキルアップまで、現在地に合わせたステップ設計を行います。</p>
+              <a href="../individual/personal.html" class="mt-4 inline-flex items-center gap-2 rounded-lg bg-bluebrand px-5 py-3 text-sm font-bold text-white transition hover:bg-[#09539a]">個人向けページを見る <span aria-hidden="true">›</span></a>
+            </div>
+          </div>
+        </div>
       </div>
-    </div>
-  </section>
+    </section>
+
+    <section class="bg-white py-24">
+      <div class="mx-auto max-w-7xl px-5 lg:px-8">
+        <h2 class="about-title text-3xl font-black text-navy">ブランド概要</h2>
+        <div class="mt-10 overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-line">
+          <div class="grid border-b border-slate-200 bg-slate-50 px-6 py-4 md:grid-cols-[200px_1fr] md:px-8">
+            <p class="font-bold text-slate-500">ブランド名</p>
+            <p class="mt-1 font-semibold text-slate-700 md:mt-0">PieceAcademy</p>
+          </div>
+          <div class="grid border-b border-slate-200 px-6 py-4 md:grid-cols-[200px_1fr] md:px-8">
+            <p class="font-bold text-slate-500">提供領域</p>
+            <p class="mt-1 leading-8 text-slate-700 md:mt-0">個人向けプログラミング学習支援 / 法人向けDX・IT人材育成支援</p>
+          </div>
+          <div class="grid border-b border-slate-200 bg-slate-50 px-6 py-4 md:grid-cols-[200px_1fr] md:px-8">
+            <p class="font-bold text-slate-500">支援スタイル</p>
+            <p class="mt-1 leading-8 text-slate-700 md:mt-0">オンライン・対面を組み合わせた伴走支援 / 目的起点での設計と改善サイクル</p>
+          </div>
+          <div class="grid px-6 py-4 md:grid-cols-[200px_1fr] md:px-8">
+            <p class="font-bold text-slate-500">目指す姿</p>
+            <p class="mt-1 leading-8 text-slate-700 md:mt-0">学びが一過性で終わらず、個人のキャリアと企業の成長に継続的な価値を生み出す社会の実現</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="pb-24">
+      <div class="mx-auto max-w-7xl px-5 lg:px-8">
+        <div class="rounded-2xl border border-blue-100 bg-gradient-to-r from-blue-50 via-white to-emerald-50 p-8 shadow-line md:flex md:items-center md:justify-between md:p-10">
+          <div>
+            <p class="text-sm font-black uppercase tracking-[0.16em] text-bluebrand">Contact Us</p>
+            <h2 class="mt-3 text-3xl font-black text-navy">まずは、今の課題を聞かせてください。</h2>
+            <p class="mt-4 max-w-2xl text-sm leading-8 text-slate-600">個人の学習相談から法人の研修設計まで、状況に合わせて最適な進め方をご提案します。具体的に決まっていない段階でも問題ありません。</p>
+          </div>
+          <a href="../contact/contact.html" class="mt-7 inline-flex items-center justify-center gap-2 rounded-xl bg-bluebrand px-8 py-4 text-base font-black text-white transition hover:bg-[#09539a] md:mt-0">無料で相談する <span aria-hidden="true">›</span></a>
+        </div>
+      </div>
+    </section>
   </main>
   <site-footer page="about"></site-footer>
 </body>
